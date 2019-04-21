@@ -1,0 +1,63 @@
+body{
+    font-family: 'Merienda', cursive;
+}
+
+.home-jumbotron{
+    width: 100%;
+    /*background-image: url("../img/home-jumbo-img.png");*/
+    height: 100%;
+    background-size: 100%;
+    border-radius: 0rem !important;
+    background-color: #ffc107;
+}
+.search-div{    
+    border-radius: 10px !important;
+    padding: 20px;    
+  }
+  .card{
+      margin: 3%;
+  }
+
+  .popular-flight{
+      background-color: #794afc;;
+  }
+  .card-img-top-15{
+      height: 15rem;
+  }
+  .btn-primary{
+      background-color: #343a40!important;
+      border: none;
+  }
+  .fab{
+      color: white;
+  }
+  
+  .top-navbar-font{
+      color: white;
+      font-weight: 500;
+      font-size: 1.2rem;
+  }
+  .logo-text{
+    font-size: 2.0rem;
+    color: #343a40;
+    font-weight: bold;
+  }
+
+  .navbar-font{
+    color: #343a40;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.nav-item-link{
+    padding: 0 1.3rem;
+}
+
+.font-white{
+    color: white;
+}
+.contact-text{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
