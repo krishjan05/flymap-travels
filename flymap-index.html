@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+
+<head>
+    <title>FlyMap travels</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./asset/css/site.css">
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+
+    <!-- Start of  Zendesk Widget script -->
+    <script id="ze-snippet"
+        src="https://static.zdassets.com/ekr/snippet.js?key=78051ea8-e579-44e6-8c12-2dd79147bb39"> </script>
+    <!-- End of  Zendesk Widget script -->
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark">
+        <div class="container">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link top-navbar-font" href="#"><i class="fas fa-headset fa-lg"></i> &nbsp; <span
+                            class="">
+                            Call us :
+                            +1-8888-35-9627</span>
+                        |</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link top-navbar-font" href="mailto:info@flymaptravels.com"><i
+                            class="fas fa-envelope fa-lg"></i>
+                        &nbsp; <span class="">Email Us</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link top-navbar-font" href="#"><i class="fab fa-facebook-square fa-lg"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link top-navbar-font" href="#"><i class="fab fa-instagram fa-lg"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link top-navbar-font" href="#"><i class="fab fa-google-plus"></i></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-sm bg-warning">
+        <a class="navbar-brand logo-text" href="#">Flymap <i class="fas fa-plane-departure"></i></a>
+        <ul class="navbar-nav mr-auto">
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li> -->
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item nav-item-link">
+                <a class="nav-link navbar-font" href="#">Home</i></a>
+            </li>
+            <li class="nav-item nav-item-link">
+                <a class="nav-link navbar-font" href="#">Terms</i></a>
+            </li>
+            <li class="nav-item nav-item-link">
+                <a class="nav-link navbar-font" href="#">Privacy Policy</a>
+            </li>
+            <li class="nav-item nav-item-link">
+                <a class="nav-link navbar-font" href="#">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="row marquee">
+        <div class="container text-center">
+            <h2>Book your flight</h2>
+            <marquee direction="right" loop="INFINITE">
+                <i class="fas fa-fighter-jet fa-3x"></i>
+            </marquee>
+        </div>
+        <div class="col-12 col-xl-12 text-center">
+            <div class="jumbotron home-jumbotron">
+                <form class="search-div container align-middle">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-4 col-md-4 col-xl-4">
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-lg" id="fromCity"
+                                    aria-describedby="emailHelp" placeholder="Where are you flying from">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 col-md-4 col-xl-4">
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-lg" id="toCity"
+                                    placeholder="Where are you flying to">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-4 col-md-4 col-xl-4">
+                            <div class="form-group">
+                                <select class="form-control form-control-lg" id="exampleFormControlSelect1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-2 col-md-4 col-xl-4">
+                            <input class="form-control form-control-lg" id="datepicker" type="date"
+                                placeholder="Leaving" />
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-2 col-md-4 col-xl-4">
+                            <input class="form-control form-control-lg" id="datepicker" type="date"
+                                placeholder="Returning" />
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-4 col-md-4 col-xl-4">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block btn-lg">Search for
+                                    flights</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button> -->
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="container">
+            <h1 class="pt-5">
+                Why flymap travels
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-xl-6 p-3">
+                    <div class="d-table-row">
+                        <div class="d-table-cell p-3">
+                            <i class="fas fa-funnel-dollar fa-3x"></i>
+                        </div>
+                        <div class="d-table-cell">
+                            <h2>Lowest price</h2>
+                            <span>We are honest to our customers. Instead of listing eye catchy offers, we provide the
+                                affordable air tickets of all the major airlines.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-xl-6  p-3">
+
+                    <div class="d-table-row">
+                        <div class="d-table-cell p-3">
+                            <i class="fas fa-clock fa-3x"></i>
+                        </div>
+                        <div class="d-table-cell">
+                            <h2>24 hour support</h2>
+                            <span> We are available for you 24*7. Please feel free to contact us. You can contact us
+                                through
+                                call, chat or email.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-5">
+                <div class="col-12 col-sm-12 col-md-6 col-xl-6  p-3">
+                    <div class="d-table-row">
+                        <div class="d-table-cell p-3">
+                            <i class="fas fa-user-shield fa-3x"></i>
+                        </div>
+                        <div class="d-table-cell">
+                            <h2>Safe Payment</h2>
+                            <span>SSL security protocols makes all your transactions safe and secure.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-xl-6  p-3">
+                    <div class="d-table-row">
+                        <div class="d-table-cell p-3">
+                            <i class="fas fa-ticket-alt fa-3x"></i>
+                        </div>
+                        <div class="d-table-cell">
+                            <h2>Hassle free booking</h2>
+                            <span>We need least amount of your effort and time to get complete your booking.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row text-center popular-flight">
+        <div class="container pt-5">
+            <h1 class="font-white">
+                Popular Flights
+            </h1>
+        </div>
+    </div>
+    <div class="row popular-flight">
+        <div class="container text-center popular-flight">
+            <div class="d-flex align-items-stretch">
+                <div class="card d-inline-block" style="width: 18rem;">
+                    <img class="card-img-top card-img-top-15" src="./asset/img/Red-fort-delhi.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheap flight to Delhi</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary"><i class="fas fa-phone-square"></i> +1-8888-35-9627</a>
+                    </div>
+                </div>
+                <div class="card d-inline-block" style="width: 18rem;">
+                    <img class="card-img-top card-img-top-15" src="./asset/img/gateway-of-india-mumbai.jpg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheap flight to Mumbai</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary"><i class="fas fa-phone-square"></i> +1-8888-35-9627</a>
+                    </div>
+                </div>
+                <div class="card d-inline-block" style="width: 18rem;">
+                    <img class="card-img-top card-img-top-15" src="./asset/img/bengaluru.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheap flight to Bengaluru</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary"><i class="fas fa-phone-square"></i> +1-8888-35-9627</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center popular-flight">
+            <div class="d-flex align-items-stretch">
+                <div class="card d-inline-block" style="width: 18rem;">
+                    <img class="card-img-top card-img-top-15" src="./asset/img/akshardham-ahmedabad.jpeg"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheap flight to Ahmedabad</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary"><i class="fas fa-phone-square"></i> +1-8888-35-9627</a>
+                    </div>
+                </div>
+                <div class="card d-inline-block" style="width: 18rem;">
+                    <img class="card-img-top card-img-top-15" src="./asset/img/char-minar-hyd.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheap flight to Hyderabad</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary"><i class="fas fa-phone-square"></i> +1-8888-35-9627</a>
+                    </div>
+                </div>
+                <div class="card d-inline-block" style="width: 18rem;">
+                    <img class="card-img-top card-img-top-15" src="./asset/img/chennai.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheap flight to Chennai</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary"><i class="fas fa-phone-square"></i> +1-8888-35-9627</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row bg-dark">
+        <div class="col-xl-12 text-center pt-5 pb-5">
+            <h1 class="font-white">Contact Us</h1>
+            <div class="row contact-text">
+                <div class="col-xl-6 float-right">
+                    <p class="float-right"> <i class="fas fa-phone-square"></i> Call us at +1-8888-35-9627</p>
+                </div>
+                <div class="col-xl-6">
+                    <p class="float-left"> Email us at info@flymaptravels.com</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="footerLogo xstc"><svg id="companyLogo" data-name="companyLogo"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83 14.75" width="100%">
+                            <defs>
+                                <style>
+                                    .cls-1-green {
+                                        fill: #7bac3a;
+                                    }
+
+                                    .cls-2-blue {
+                                        fill: #1b75bb;
+                                    }
+
+                                    .cls-3-orrange {
+                                        fill: orange;
+                                    }
+                                </style>
+                            </defs>
+                            <title>Travelopod</title>
+                            <path class="cls-1-green"
+                                d="M4.68,2.86H2.18a1,1,0,0,1-.38-.08,1.1,1.1,0,0,1-.31-.2.85.85,0,0,1-.21-.32,1,1,0,0,1-.08-.39.92.92,0,0,1,.08-.38.81.81,0,0,1,.21-.31A1,1,0,0,1,1.8,1,1,1,0,0,1,2.18.89H9.11A1,1,0,0,1,9.49,1a1,1,0,0,1,.31.21A1.21,1.21,0,0,1,10,1.5a1,1,0,0,1,.07.39,1,1,0,0,1-.07.38,1.16,1.16,0,0,1-.22.31,1.1,1.1,0,0,1-.31.2,1,1,0,0,1-.38.08H6.61V11.7a.92.92,0,0,1-.08.38,1,1,0,0,1-.21.31,1,1,0,0,1-.7.29A.89.89,0,0,1,5,12.41a1,1,0,0,1-.27-.7Z"
+                                transform="translate(-1.2 -0.89)"></path>
+                            <path class="cls-1-green"
+                                d="M8.54,8.58A4.36,4.36,0,0,1,8.9,6.82a4.51,4.51,0,0,1,1-1.44,4.61,4.61,0,0,1,1.43-1A4.36,4.36,0,0,1,13.06,4h0a1,1,0,0,1,.75.28,1,1,0,0,1,.26.71.85.85,0,0,1-.08.39.85.85,0,0,1-.21.31,1,1,0,0,1-.32.21,1.1,1.1,0,0,1-.4.08H13a2.43,2.43,0,0,0-1,.2,2.63,2.63,0,0,0-1.35,1.33,2.45,2.45,0,0,0-.21,1v3.1a1,1,0,0,1-.08.38,1.1,1.1,0,0,1-.2.31,1.08,1.08,0,0,1-.3.21.94.94,0,0,1-.37.07.92.92,0,0,1-.38-.07,1.24,1.24,0,0,1-.33-.21A1,1,0,0,1,8.63,12a1,1,0,0,1-.08-.38v-3Z"
+                                transform="translate(-1.2 -0.89)"></path>
+                            <path class="cls-1-green"
+                                d="M18.66,12.68A4.09,4.09,0,0,1,17,12.34a4.29,4.29,0,0,1-1.37-.92,4.64,4.64,0,0,1-.92-1.37,4.3,4.3,0,0,1,0-3.35,4.57,4.57,0,0,1,.92-1.38A4.32,4.32,0,0,1,17,4.39a4.27,4.27,0,0,1,4.71.93,4.12,4.12,0,0,1,.92,1.38A4.27,4.27,0,0,1,23,8.38v3.28a1,1,0,0,1-.07.39,1.21,1.21,0,0,1-.22.32.89.89,0,0,1-.32.21,1,1,0,0,1-.39.08.92.92,0,0,1-.59-.2A.83.83,0,0,1,21,12a4.23,4.23,0,0,1-1.12.52A4,4,0,0,1,18.66,12.68Zm0-2a2.4,2.4,0,0,0,.92-.19,2.25,2.25,0,0,0,.74-.5,2.4,2.4,0,0,0,.5-.75,2.39,2.39,0,0,0,0-1.82,2.24,2.24,0,0,0-.5-.75,2.08,2.08,0,0,0-.74-.49A2.19,2.19,0,0,0,18.65,6a2.1,2.1,0,0,0-.9.18,2.38,2.38,0,0,0-.75.49,2.4,2.4,0,0,0-.5.75,2.39,2.39,0,0,0,0,1.82A2.59,2.59,0,0,0,17,10a2.36,2.36,0,0,0,.74.5A2.32,2.32,0,0,0,18.65,10.72Z"
+                                transform="translate(-1.2 -0.89)"></path>
+                            <path class="cls-1-green"
+                                d="M24.23,5.46a.91.91,0,0,1-.09-.41,1,1,0,0,1,.07-.37.79.79,0,0,1,.2-.31.91.91,0,0,1,.32-.22.86.86,0,0,1,.39-.09.89.89,0,0,1,.52.16,1,1,0,0,1,.37.43L27.94,9.3l1.92-4.64a1,1,0,0,1,.37-.44,1.06,1.06,0,0,1,.54-.16.86.86,0,0,1,.39.09,1,1,0,0,1,.31.22.92.92,0,0,1,.2.31.94.94,0,0,1,.07.37,1.09,1.09,0,0,1-.09.41L28.86,12a1,1,0,0,1-.41.45,1,1,0,0,1-.51.13.85.85,0,0,1-.57-.18A1.12,1.12,0,0,1,27,12Z"
+                                transform="translate(-1.2 -0.89)"></path>
+                            <path class="cls-1-green"
+                                d="M34.36,9.26a2,2,0,0,0,.33.62,2,2,0,0,0,.49.48,2.28,2.28,0,0,0,.62.32,2.08,2.08,0,0,0,.71.12,2.3,2.3,0,0,0,.65-.07,1.91,1.91,0,0,0,.49-.21,1.17,1.17,0,0,1,.57-.18.85.85,0,0,1,.39.08,1,1,0,0,1,.3.23,1.08,1.08,0,0,1,.2.33,1,1,0,0,1,.08.38.89.89,0,0,1-.2.55,1.51,1.51,0,0,1-.55.42,3,3,0,0,1-.84.26,5.34,5.34,0,0,1-1.09.09,4.1,4.1,0,0,1-1.68-.34,4.38,4.38,0,0,1-1.39-.92,4.49,4.49,0,0,1-.93-1.37,4.26,4.26,0,0,1-.34-1.67,4.32,4.32,0,0,1,.34-1.69,4.37,4.37,0,0,1,.93-1.37,4.58,4.58,0,0,1,1.39-.93,4.31,4.31,0,0,1,1.68-.34,4.12,4.12,0,0,1,1.67.34,4.37,4.37,0,0,1,2.68,3.94.83.83,0,0,1-.28.67,1,1,0,0,1-.69.26Zm4.47-1.65a2.49,2.49,0,0,0-.32-.68A2.56,2.56,0,0,0,38,6.4a2.47,2.47,0,0,0-2.24-.34,2.33,2.33,0,0,0-.66.36,2.52,2.52,0,0,0-.5.53,2.37,2.37,0,0,0-.3.67h4.53Z"
+                                transform="translate(-1.2 -0.89)"></path>
+                            <path class="cls-1-green"
+                                d="M45.35,12.59a3.25,3.25,0,0,1-1.18-.21,2.73,2.73,0,0,1-1.57-1.51,2.88,2.88,0,0,1-.24-1.19V2a1,1,0,0,1,.08-.39,1,1,0,0,1,.2-.32.9.9,0,0,1,.3-.21A1,1,0,0,1,43.31,1a1,1,0,0,1,.39.08.93.93,0,0,1,.33.21,1.07,1.07,0,0,1,.22.32,1,1,0,0,1,.08.39V9.72a1,1,0,0,0,.27.69,1,1,0,0,0,.71.24h0a1,1,0,0,1,.39.08,1,1,0,0,1,.31.21.79.79,0,0,1,.2.31,1,1,0,0,1,.07.38.93.93,0,0,1-.27.69A1,1,0,0,1,45.35,12.59Z"
+                                transform="translate(-1.2 -0.89)"></path>
+                            <path class="cls-1-green"
+                                d="M56.74,8.38A4.28,4.28,0,0,1,58,5.32a4.32,4.32,0,0,1,1.37-.93A4.3,4.3,0,0,1,65,6.7a4.18,4.18,0,0,1,0,3.35,4.18,4.18,0,0,1-.92,1.37,4.29,4.29,0,0,1-1.37.92,4.12,4.12,0,0,1-1.67.34,4.36,4.36,0,0,1-1.26-.18,4.47,4.47,0,0,1-1.1-.53v2.65a1.09,1.09,0,0,1-.26.73.89.89,0,0,1-.71.3,1,1,0,0,1-.38-.08,1,1,0,0,1-.31-.21,1,1,0,0,1-.22-.33,1.09,1.09,0,0,1-.07-.4V8.38Zm2,0a2.18,2.18,0,0,0,.19.91,2.36,2.36,0,0,0,.5.74,2.32,2.32,0,0,0,.75.51,2.36,2.36,0,0,0,.92.18,2.39,2.39,0,0,0,.92-.18,2.56,2.56,0,0,0,.75-.51,2.37,2.37,0,0,0,.5-2.57,2.54,2.54,0,0,0-.5-.74,2.4,2.4,0,0,0-.75-.5A2.36,2.36,0,0,0,61.07,6a2.39,2.39,0,0,0-.92.18,2.59,2.59,0,0,0-.75.5,2.36,2.36,0,0,0-.5.74A2.2,2.2,0,0,0,58.71,8.38Z"
+                                transform="translate(-1.2 -0.89)"></path>
+                            <path class="cls-1-green"
+                                d="M66.15,8.38a4.1,4.1,0,0,1,.34-1.68,4.38,4.38,0,0,1,2.3-2.31,4.29,4.29,0,0,1,4.73.93,4.3,4.3,0,0,1,.93,4.73,4.37,4.37,0,0,1-.93,1.37,4.29,4.29,0,0,1-1.37.92,4.32,4.32,0,0,1-3.36,0,4.4,4.4,0,0,1-1.37-.92,4.49,4.49,0,0,1-.93-1.37A4.09,4.09,0,0,1,66.15,8.38Zm2,0a2.35,2.35,0,0,0,.19.91,2.23,2.23,0,0,0,.51.74,2.28,2.28,0,0,0,.74.51,2.31,2.31,0,0,0,.91.18,2.41,2.41,0,0,0,.93-.18,2.56,2.56,0,0,0,.75-.51,2.17,2.17,0,0,0,.49-.74,2.3,2.3,0,0,0,0-1.83,2.39,2.39,0,0,0-.51-.74,2.29,2.29,0,0,0-.75-.5A2.32,2.32,0,0,0,70.45,6a2.3,2.3,0,0,0-.9.18,2.46,2.46,0,0,0-.75.5,2.57,2.57,0,0,0-.51.74A2.36,2.36,0,0,0,68.11,8.38Z"
+                                transform="translate(-1.2 -0.89)"></path>
+                            <path class="cls-1-green"
+                                d="M75.56,8.38A4.1,4.1,0,0,1,75.9,6.7a4.38,4.38,0,0,1,2.3-2.31A4.14,4.14,0,0,1,79.88,4a3.09,3.09,0,0,1,1.47.3,2.32,2.32,0,0,1,.88.85V2a1.34,1.34,0,0,1,.07-.4,1.08,1.08,0,0,1,.2-.33A1.11,1.11,0,0,1,82.82,1,.92.92,0,0,1,83.2.93a1.06,1.06,0,0,1,.4.08,1,1,0,0,1,.31.21.81.81,0,0,1,.21.33,1.06,1.06,0,0,1,.08.4V8.42a4,4,0,0,1-.36,1.66,4.23,4.23,0,0,1-.93,1.35,4.54,4.54,0,0,1-1.36.92,4.29,4.29,0,0,1-1.67.33,4.14,4.14,0,0,1-1.68-.34,4.4,4.4,0,0,1-1.37-.92,4.49,4.49,0,0,1-.93-1.37A4.09,4.09,0,0,1,75.56,8.38Zm2,0a2.18,2.18,0,0,0,.19.91,2.36,2.36,0,0,0,.5.74,2.39,2.39,0,0,0,.74.51,2.36,2.36,0,0,0,.92.18A2.3,2.3,0,0,0,81.54,10a2.3,2.3,0,0,0,.68-1.65A2.2,2.2,0,0,0,82,7.46a2.36,2.36,0,0,0-.5-.74A2.34,2.34,0,0,0,79.86,6a2.34,2.34,0,0,0-.91.18,2.73,2.73,0,0,0-.75.5,2.3,2.3,0,0,0-.68,1.66Z"
+                                transform="translate(-1.2 -0.89)"></path>
+                            <g id="Layer_4" data-name="Layer 4">
+                                <path class="cls-2-blue"
+                                    d="M51,3.74a4.39,4.39,0,1,0,4.38,4.38A4.39,4.39,0,0,0,51,3.74Zm0,6.79a2.41,2.41,0,1,1,2.4-2.41A2.4,2.4,0,0,1,51,10.53Z"
+                                    transform="translate(-1.2 -0.89)"></path>
+                                <g id="Layer_5" data-name="Layer 5">
+                                    <path class="cls-3-orrange"
+                                        d="M49.88,3.29a28.17,28.17,0,0,1,6-2.33A56.3,56.3,0,0,1,56,7.27a5.55,5.55,0,0,0-2.22-3.34A5,5,0,0,0,49.88,3.29Z"
+                                        transform="translate(-1.2 -0.89)"></path>
+                                </g>
+                            </g>
+                        </svg></div>
+                    <div class="row no-gutters smIcon">
+                        <div class="col"><a target="_blank" href="//www.facebook.com/Travelopod"><svg id="facebook"
+                                    class="shareIcon" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512">
+                                    <path
+                                        d="M261,5C119.84,5,5,119.84,5,261S119.84,517,261,517,517,402.15,517,261,402.17,5,261,5Zm63.66,265H283V418.46H221.3V270H192V217.55H221.3V183.61c0-24.3,11.55-62.28,62.28-62.28l45.74.17v50.93h-33.2c-5.4,0-13.08,2.7-13.08,14.29v30.84h47Z"
+                                        transform="translate(-5 -5)" style="fill:#ababab"></path>
+                                </svg></a></div>
+                        <div class="col"><a target="_blank" href="//twitter.com/TravelopodUS"><svg id="twitter"
+                                    class="shareIcon" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512" style="width: 100%; height: 42px;">
+                                    <path
+                                        d="M261,5C119.62,5,5,119.62,5,261S119.62,517,261,517,517,402.38,517,261,402.38,5,261,5ZM388.36,203.53l.19,8.16C388.55,295,325.16,391,209.22,391a178.42,178.42,0,0,1-96.6-28.32,130.77,130.77,0,0,0,15,.89,126.47,126.47,0,0,0,78.27-27,63.12,63.12,0,0,1-58.88-43.77,64.7,64.7,0,0,0,28.48-1.09A63.08,63.08,0,0,1,125,230v-.8a62.81,62.81,0,0,0,28.54,7.9A63.12,63.12,0,0,1,134,152.94a178.87,178.87,0,0,0,129.92,65.85,63.08,63.08,0,0,1,107.42-57.47,127.77,127.77,0,0,0,40-15.3,63.19,63.19,0,0,1-27.72,34.88,126,126,0,0,0,36.2-9.92A127.4,127.4,0,0,1,388.36,203.53Z"
+                                        transform="translate(-5 -5)" style="fill:#ababab"></path>
+                                </svg></a></div>
+                        <div class="col"><a target="_blank"
+                                href="//www.youtube.com/channel/UCL6IfuDPHaE_oo5-zfukghg"><svg id="youtube"
+                                    class="shareIcon" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512">
+                                    <polygon
+                                        points="134.49 274.89 154.78 274.89 154.78 384.75 173.99 384.75 173.99 274.89 194.66 274.89 194.66 256.9 134.49 256.9 134.49 274.89"
+                                        style="fill:#ababab"></polygon>
+                                    <path
+                                        d="M304.85,296.32c-6.35,0-12.27,3.47-17.84,10.33V264.9H269.75V392.75H287v-9.23c5.78,7.13,11.7,10.54,17.84,10.54,6.87,0,11.49-3.61,13.79-10.71,1.16-4,1.75-10.38,1.75-19.19V326.23c0-9-.59-15.32-1.75-19.15C316.34,299.94,311.71,296.32,304.85,296.32Zm-1.73,69.19c0,8.61-2.52,12.85-7.51,12.85-2.83,0-5.72-1.35-8.61-4.24V316.06c2.89-2.86,5.78-4.21,8.61-4.21,5,0,7.51,4.41,7.51,13Z"
+                                        transform="translate(-8 -8)" style="fill:#ababab"></path>
+                                    <path
+                                        d="M237.54,370.29c-3.83,5.41-7.44,8.07-10.91,8.07-2.31,0-3.62-1.35-4-4a52.24,52.24,0,0,1-.16-6.7V297.49H205.17V372.8c0,6.73.58,11.28,1.52,14.17,1.74,4.83,5.57,7.09,11.12,7.09,6.36,0,12.87-3.83,19.73-11.7v10.39h17.28V297.49H237.54Z"
+                                        transform="translate(-8 -8)" style="fill:#ababab"></path>
+                                    <path
+                                        d="M252.36,209.48c5.62,0,8.32-4.46,8.32-13.36v-40.5c0-8.91-2.7-13.34-8.32-13.34S244,146.72,244,155.62v40.5C244,205,246.74,209.48,252.36,209.48Z"
+                                        transform="translate(-8 -8)" style="fill:#ababab"></path>
+                                    <path
+                                        d="M264,8C122.61,8,8,122.61,8,264S122.61,520,264,520,520,405.39,520,264,405.39,8,264,8Zm28.47,119.74h17.4v70.88c0,4.09,0,6.21.21,6.78.38,2.7,1.75,4.08,4.09,4.08,3.49,0,7.15-2.7,11-8.16V127.74h17.44V224H325.19V213.51c-6.95,8-13.57,11.82-19.93,11.82-5.62,0-9.49-2.28-11.24-7.15-1-2.92-1.55-7.52-1.55-14.32V127.74Zm-65.88,31.39c0-10.29,1.75-17.82,5.46-22.68,4.82-6.59,11.62-9.88,20.31-9.88s15.53,3.29,20.35,9.88c3.66,4.86,5.41,12.39,5.41,22.68v33.71c0,10.23-1.75,17.82-5.41,22.64q-7.23,9.84-20.35,9.85c-8.69,0-15.49-3.29-20.31-9.85-3.71-4.82-5.46-12.41-5.46-22.64ZM179.94,94.82l13.74,50.73,13.19-50.73h19.56l-23.27,76.87V224H183.82V171.69c-1.75-9.27-5.62-22.85-11.83-40.87-4.07-12-8.32-24-12.4-36ZM401.81,401.16a36.08,36.08,0,0,1-30.87,28.06c-35.42,4-71.25,4-107,4s-71.53,0-107-4a36,36,0,0,1-30.86-28.06c-5-21.63-5-45.25-5-67.52s.07-45.88,5-67.51a36.08,36.08,0,0,1,30.86-28.07c35.42-3.95,71.27-4,107-3.95s71.53,0,107,3.95a36.1,36.1,0,0,1,30.88,28.07c5,21.63,4.94,45.24,4.94,67.51S406.79,379.53,401.81,401.16Z"
+                                        transform="translate(-8 -8)" style="fill:#ababab"></path>
+                                    <path
+                                        d="M359.83,296.32c-8.83,0-15.69,3.25-20.68,9.77-3.66,4.81-5.33,12.26-5.33,22.44V361.9c0,10.13,1.87,17.63,5.55,22.4,5,6.5,11.86,9.76,20.89,9.76s16.09-3.41,20.86-10.33a24.58,24.58,0,0,0,4-10.35c.16-1.73.36-5.56.36-11.12v-2.51h-17.6a113.31,113.31,0,0,1-.38,11.69c-1,4.61-3.47,6.92-7.71,6.92-5.93,0-8.83-4.4-8.83-13.21v-16.9h34.52V328.52c0-10.18-1.72-17.63-5.34-22.44C375.36,299.57,368.49,296.32,359.83,296.32Zm8.44,37.57H351v-8.82q0-13.21,8.66-13.21c5.71,0,8.6,4.41,8.6,13.21Z"
+                                        transform="translate(-8 -8)" style="fill:#ababab"></path>
+                                </svg></a></div>
+                        <div class="col"><a target="_blank" href="//www.linkedin.com/company/travelopod/"><svg
+                                    id="linkedin" class="shareIcon" data-name="linkedin"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 291.32 291.32">
+                                    <path
+                                        d="M149.34,3.68A145.66,145.66,0,1,0,295,149.34,145.65,145.65,0,0,0,149.34,3.68ZM99.27,76.51A13.66,13.66,0,1,1,85.61,90.17h0A13.67,13.67,0,0,1,99.27,76.51ZM113,203.82H85.76V112.91H113Zm109.2,0H195V154.24c0-10.17-3-20.34-14.91-20.34s-21.51,10.17-21.51,20.59v49.33H131.16V112.61h27.37v12.65c8.41-10.67,20.25-15.5,33.49-15.5s30.21,6.61,30.21,42.45Z"
+                                        transform="translate(-3.68 -3.68)" style="fill:#ababab"></path>
+                                </svg></a></div>
+                        <div class="col"><a target="_blank" href="//plus.google.com/u/1/105782660676779526585"><svg
+                                    id="google_plus" class="shareIcon" data-name="google_plus"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450.9 450.9">
+                                    <path
+                                        d="M223.76,239.1c12.09-12.09,13-28.9,13-38.34,0-38-22.47-96.76-66.1-96.76-13.61,0-28.34,6.84-36.83,17.36-8.87,11-11.52,25.2-11.52,38.79,0,35.32,20.4,93.68,65.73,93.68C201.1,253.81,215.26,247.38,223.76,239.1ZM6.1,231.55a224.51,224.51,0,0,0,53.57,145.9c6.31-10.59,16.09-21,30.56-29.58,32.68-20,76.68-22.68,100.48-24.19-7.37-9.44-15.87-19.45-15.87-35.87,0-8.89,2.65-14.17,5.29-20.41-5.85.57-11.52,1.14-16.81,1.14C107.6,268.54,76.1,227,76.1,186c0-24.17,11.15-51,33.62-70.47,30-24.68,65.72-28.89,94.06-28.89H312l-33.62,18.91H245.86c12.07,10,37.2,31,37.2,71,0,38.92-22.1,57.23-44,74.6-7,6.81-14.73,14.17-14.73,25.68s7.74,18,13.6,22.68l18.88,14.73c23.24,19.26,44.2,37.2,44.2,73.47,0,23.91-11.15,47.92-32.91,66.33A227.57,227.57,0,0,1,232.17,457c22.08-9.69,33.53-27.4,33.53-48.7,0-26.81-17.19-41-57.23-69.49a116,116,0,0,0-12.08-.39c-4.72,0-33,1-55.15,8.31-11.52,4.16-45.14,16.81-45.14,54.21a54.37,54.37,0,0,0,1.27,11.79A225,225,0,0,1,6.1,231.55Zm433.84-86.18h0A223.05,223.05,0,0,1,448.5,170,223.05,223.05,0,0,0,439.94,145.37ZM231.55,457C107,457,6.1,356.1,6.1,231.55S107,6.1,231.55,6.1A225.5,225.5,0,0,1,439.94,145.37H395.1V86.65H369.94v58.72H311.22V170h58.72v59.24H395.1V170h53.39A225.4,225.4,0,0,1,457,231.55C457,356.1,356.1,457,231.55,457Z"
+                                        transform="translate(-6.1 -6.1)" style="fill:#ababab;fill-rule:evenodd"></path>
+                                </svg></a></div>
+                        <div class="col"><a target="_blank" href="//instagram.com/travelopod/"><svg id="instagram_logo"
+                                    class="shareIcon" data-name="instagram" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 68 68">
+                                    <path d="M34,28.3A5.76,5.76,0,0,0,28.3,34,5.7,5.7,0,1,0,34,28.3Z"
+                                        style="fill:#ababab"></path>
+                                    <path
+                                        d="M47.4,24.1a5.71,5.71,0,0,0-3.3-3.3,10.91,10.91,0,0,0-3.2-.6c-1.8-.1-2.4-.1-6.9-.1H32.5c-3.2,0-3.8,0-5.4.1a10.91,10.91,0,0,0-3.2.6,5.71,5.71,0,0,0-3.3,3.3,10.91,10.91,0,0,0-.6,3.2c-.1,1.8-.1,2.3-.1,6.9s0,5.1.1,6.9a10.91,10.91,0,0,0,.6,3.2,5.71,5.71,0,0,0,3.3,3.3,10.91,10.91,0,0,0,3.2.6c1.8.1,2.3.1,6.9.1s5.1,0,6.9-.1a10.91,10.91,0,0,0,3.2-.6,5.71,5.71,0,0,0,3.3-3.3,10.91,10.91,0,0,0,.6-3.2c.1-1.8.1-2.3.1-6.9s0-5.1-.1-6.9A10.91,10.91,0,0,0,47.4,24.1ZM34,42.7A8.7,8.7,0,1,1,42.7,34,8.71,8.71,0,0,1,34,42.7Zm9.1-15.8a2,2,0,1,1,2-2A2,2,0,0,1,43.1,26.9Z"
+                                        style="fill:#ababab"></path>
+                                    <path
+                                        d="M34,0A34,34,0,1,0,68,34,34,34,0,0,0,34,0ZM50.9,41a13.38,13.38,0,0,1-.8,4.1,9.91,9.91,0,0,1-2,3,7.18,7.18,0,0,1-3,2,13.38,13.38,0,0,1-4.1.8c-1.8.1-2.4.1-7,.1s-5.2,0-7-.1a13.38,13.38,0,0,1-4.1-.8,9.91,9.91,0,0,1-3-2,7.18,7.18,0,0,1-2-3,13.38,13.38,0,0,1-.8-4.1c-.1-1.8-.1-2.4-.1-7s0-5.2.1-7a13.38,13.38,0,0,1,.8-4.1,9.91,9.91,0,0,1,2-3,7.18,7.18,0,0,1,3-2,13.38,13.38,0,0,1,4.1-.8c1.8-.1,2.4-.1,7-.1s5.2,0,7,.1a13.38,13.38,0,0,1,4.1.8,9.91,9.91,0,0,1,3,2,7.18,7.18,0,0,1,2,3,13.38,13.38,0,0,1,.8,4.1c.1,1.8.1,2.4.1,7S51,39.2,50.9,41Z"
+                                        style="fill:#ababab"></path>
+                                </svg></a></div>
+                        <div class="col"><a target="_blank" href="//pinterest.com/travelopod"><svg id="pinterest"
+                                    class="shareIcon" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512">
+                                    <path
+                                        d="M264,8C122.62,8,8,122.62,8,264S122.62,520,264,520,520,405.38,520,264,405.38,8,264,8Zm23.55,333.52c-18.92,0-36.72-10.45-42.84-22.32,0,0-10.17,41.24-12.34,49.2-3.63,13.45-10.63,26.88-17.13,37.52C206,418,195.3,409,194,398c-.42-12.28,0-26.83,3.07-40.07,3.38-14.52,22.55-97.54,22.55-97.54S214,249,214,232.07c0-26.53,15.06-46.34,33.82-46.34,15.94,0,23.64,12.25,23.64,26.88,0,16.36-10.21,40.85-15.47,63.52-4.4,19,9.33,34.46,27.67,34.46,33.21,0,55.6-43.56,55.6-95.16,0-39.24-25.88-68.58-73-68.58-53.18,0-86.32,40.49-86.32,85.71,0,15.59,4.49,26.6,11.57,35.09,3.23,3.91,3.7,5.5,2.51,10-.84,3.3-2.77,11.22-3.56,14.36-1.17,4.54-4.77,6.14-8.78,4.47-24.5-10.22-35.91-37.61-35.91-68.38,0-50.85,42-111.82,125.3-111.82,66.94,0,111,49.45,111,102.54C382.15,289.06,343.92,341.52,287.55,341.52Z"
+                                        transform="translate(-8 -8)" style="fill:#ababab"></path>
+                                </svg></a></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 text-center col-md-6 col-lg-8">
+                    <h3 class="footerTitle">Popular Flight Deals</h3>
+                    <div class="rdBtnWRaper"><a href="/flights/flights-to-europe/"> Flights to Europe </a><a
+                            href="/flights/flights-to-australia/"> Flights to Australia </a><a
+                            href="/flights/flights-to-canada/"> Flights to Canada </a><a
+                            href="/flights/flights-to-india/"> Flights to India </a><a
+                            href="/flights/flights-to-south-america/"> Flights to America </a></div>
+                </div>
+            </div>
+            <div class="ftNavRow">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link active" href="/aboutus/">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/media-coverage/">Travelopod in Media</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/affiliates/">Affiliates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/our-culture/">Our Culture</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/terms-conditions/"> Terms &amp; Conditions**</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/refer-and-earn-at-travelopod/"> Refer &amp; Earn</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/contact-us/"> Contact us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/privacy-policy/"> Privacy Policy</a></li>
+                </ul>
+            </div>
+            <p> Our expert travel agent can help you to book with some of the most popular Airlines such as Air India,
+                Emirates, United, Jet Airways, Delta Airlines, Turkish Airlines, Qatar Airways, Air China and many more.
+            </p>
+            <p>*Fares are round trip incl. all fuel surcharges, our service fees and taxes. Book 21 days in advance for
+                Lowest fares. Displayed fares are based on different airlines, are subject to change and cannot be
+                guaranteed at the time of booking. Tickets are nonrefundable, nontransferable, non-assignable. Name
+                changes are not permitted. Other restrictions may apply.</p>
+            <p>All content on this web site is the property of Travelopod Inc or its content suppliers and protected
+                under United States and international copyright laws. Copying anything from this website without prior
+                written permission is a copyright violation and may lead to serious legal actions. </p>
+            <p class="cpyInro">© 2010 - 2019 Travelopod Inc <span>(travelopod.com)</span> CST # 2112418-40 </p>
+        </div>
+
+    </div> -->
+
+</body>
